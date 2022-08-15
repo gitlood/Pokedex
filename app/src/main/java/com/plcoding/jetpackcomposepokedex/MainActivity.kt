@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
                     ) {
                         val dominantColor = remember {
                             val color = it.arguments?.getInt("dominantColor")
-                            color?.let { Color(it) } ?: androidx.compose.ui.graphics.Color.White
+                            color?.let { Color(it) } ?: Color.White
                         }
                         val pokemonName = remember {
                             it.arguments?.get("pokemonName")
