@@ -16,10 +16,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
-import androidx.compose.ui.focus.focusModifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Outline
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltNavGraphViewModel
@@ -103,7 +101,7 @@ fun PokemonDetailTopScreen(
     modifier: Modifier = Modifier
 ) {
     Box(
-        contentAlignment = Alignment.TopCenter,
+        contentAlignment = Alignment.TopStart,
         modifier = modifier.background(
             Brush.verticalGradient(
                 listOf(Color.Black, Color.Transparent)
